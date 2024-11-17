@@ -1,0 +1,167 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Reset CSS*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+main{
+    flex-grow: 1;
+}
+
+h1{
+    text-align: center;
+    margin: 4vh;
+    color: white;
+}
+
+p{
+    text-align: justify;
+}
+
+:is(main,footer){
+    background-color: lightblue;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 4vh 0;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    background-color: blue;
+}
+
+h2{
+    color: darkblue;
+    text-align: center;
+    margin: 3vh;
+}
+
+.art-title {
+    text-decoration: underline;
+}
+
+.content article{
+    margin: 5vh 2vh;
+}
+
+.content article:not(:last-of-type){
+    border-bottom: black 1px solid;
+}
+
+.content article:last-of-type{
+    margin-bottom: 2vh;
+}
+
+footer{
+    padding: 2vh 0;
+    border-top: orangered 1px solid;
+}
+
+.art-p{
+    margin: 3vh 0;
+}
+
+address{
+    margin-left: 2vh;
+    color: orangered;
+}
+
+.form-group{
+    display: block;
+    margin-bottom: 2vh;
+}
+.members-form{
+    width: 30%;
+    margin: 3vh auto;
+}
+
+.members-form p{
+    margin-bottom: 2vh;
+}
+
+#submit{
+    background-color: green;
+    color: white;
+    border-radius: 0px;
+    border: none;
+    padding: 1vh;
+}
+
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th,td{
+    border: green 3px solid;
+    padding: 5px;
+}
+
+td a{
+    color: darkred;
+}
+
+td:nth-child(n+3){
+    text-align: center;
+}
+
+.info-libro{
+    display: flex;
+    flex-direction: row;
+    margin: 0 2vw;
+}
+
+.info-libro p{
+    margin: 2vh 0;
+}
+
+.portada{
+    margin-right: 1vh;
+    width: 10vw;
+}
+
+.info-libro button{
+    font-family: "Times New Roman";
+    border: none;
+    font-style: italic;
+    font-weight: bold;
+    background-color: yellow;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 1.5vh;
+    cursor:pointer;
+}

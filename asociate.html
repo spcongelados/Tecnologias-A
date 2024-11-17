@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Asociate a la Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Biblioteca de la UNMDP</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Información sobre la Biblioteca</a></li>
+                <li><a href="#">Asociate a la Biblioteca</a></li>
+                <li><a href="catalogo.html">Catalogo de Libros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <h2>Asociate a la Biblioteca</h2>
+            <form class="members-form" action="form.php" method="post" name="members">
+                <div class="form-group">
+                    <label for="input-surname">Apellido</label>
+                    <input type="text" name="surname" id="input-surname" required>
+                </div>
+                <div class="form-group">
+                    <label for="input-name">Nombre</label>
+                    <input type="text" name="name" id="input-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="input-date">Fecha de Nacimiento</label>
+                    <input type="date" id="input-date" required>
+                </div>
+                <div class="form-group">
+                    <p>Intereses:</p>
+                    <input type="checkbox" name="interest" id="input-academicos">
+                    <label for="input-academicos">Académicos</label>
+                    <input type="checkbox" name="interest" id="input-novela">
+                    <label for="input-novela">Novela</label>
+                    <input type="checkbox" name="interest" id="input-autoayuda">
+                    <label for="input-autoayuda">Autoayuda</label>
+                    <input type="checkbox" name="interest" id="input-historia">
+                    <label for="input-historia">Historia</label>
+                </div>
+                <input type="submit" value="Asociarse" id="submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <address>Universidad Nacional de Mar del Plata 2024</address>
+    </footer>
+</body>
+</html>
